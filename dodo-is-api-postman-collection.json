@@ -1,11 +1,4 @@
 {
-	"info": {
-		"_postman_id": "3e435242-1046-4f2d-afd4-1bfc4dbc6391",
-		"name": "Dodo IS API",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "8471863",
-		"_collection_link": "https://www.postman.com/ryzhakovsergey/workspace/dodo-is-api/collection/8471863-3e435242-1046-4f2d-afd4-1bfc4dbc6391?action=share&source=collection_link&creator=8471863"
-	},
 	"item": [
 		{
 			"name": "Учет",
