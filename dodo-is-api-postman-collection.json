@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "3e435242-1046-4f2d-afd4-1bfc4dbc6391",
+		"_postman_id": "3eadadc8-465d-4318-947b-6373db9f63c2",
 		"name": "Dodo IS API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -3892,160 +3892,6 @@
 					"response": []
 				},
 				{
-					"name": "Команда → Карта возможностей",
-					"request": {
-						"auth": {
-							"type": "oauth2",
-							"oauth2": [
-								{
-									"key": "refreshRequestParams",
-									"value": [],
-									"type": "any"
-								},
-								{
-									"key": "tokenRequestParams",
-									"value": [
-										{
-											"key": "code_verifier",
-											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
-											"enabled": true,
-											"send_as": "request_body"
-										},
-										{
-											"key": "grant_type",
-											"value": "authorization_code",
-											"enabled": true,
-											"send_as": "request_body"
-										}
-									],
-									"type": "any"
-								},
-								{
-									"key": "authRequestParams",
-									"value": [
-										{
-											"key": "code_challenge",
-											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
-											"enabled": true,
-											"send_as": "request_url"
-										},
-										{
-											"key": "code_challenge_method",
-											"value": "S256",
-											"enabled": true,
-											"send_as": "request_url"
-										},
-										{
-											"key": "response_type",
-											"value": "code",
-											"enabled": true,
-											"send_as": "request_url"
-										}
-									],
-									"type": "any"
-								},
-								{
-									"key": "tokenName",
-									"value": "access_token",
-									"type": "string"
-								},
-								{
-									"key": "challengeAlgorithm",
-									"value": "S256",
-									"type": "string"
-								},
-								{
-									"key": "scope",
-									"value": "{{auth_scope}}",
-									"type": "string"
-								},
-								{
-									"key": "redirect_uri",
-									"value": "{{redirect_url}}",
-									"type": "string"
-								},
-								{
-									"key": "grant_type",
-									"value": "authorization_code",
-									"type": "string"
-								},
-								{
-									"key": "clientSecret",
-									"value": "{{secret}}",
-									"type": "string"
-								},
-								{
-									"key": "clientId",
-									"value": "{{client_id}}",
-									"type": "string"
-								},
-								{
-									"key": "authUrl",
-									"value": "{{auth_url}}/connect/authorize",
-									"type": "string"
-								},
-								{
-									"key": "addTokenTo",
-									"value": "header",
-									"type": "string"
-								},
-								{
-									"key": "client_authentication",
-									"value": "header",
-									"type": "string"
-								},
-								{
-									"key": "accessTokenUrl",
-									"value": "{{auth_url}}/connect/token",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{api_url}}/dodopizza/{{country}}/staff/schedules/availability-periods",
-							"host": [
-								"{{api_url}}"
-							],
-							"path": [
-								"dodopizza",
-								"{{country}}",
-								"staff",
-								"schedules",
-								"availability-periods"
-							],
-							"query": [
-								{
-									"key": "from",
-									"value": "",
-									"description": "required Начало периода в формате ISO 8601",
-									"disabled": true
-								},
-								{
-									"key": "to",
-									"value": "",
-									"description": "required Конец периода в формате ISO 8601",
-									"disabled": true
-								},
-								{
-									"key": "units",
-									"value": "",
-									"description": "Список заведений (пиццерий) Dodo IS в формате UUID",
-									"disabled": true
-								},
-								{
-									"key": "staffMembers",
-									"value": "",
-									"description": "Список сотрудников Dodo IS в формате UUID",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Команда → Расписания (создание)",
 					"request": {
 						"auth": {
@@ -4615,6 +4461,467 @@
 									"key": "staffType",
 									"value": "",
 									"description": "Фильтр по типу сотрудника [Operator KitchenMember Courier Cashier PersonalManager]",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Команда → История должностей сотрудников",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}/staff/positions/history",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}",
+								"staff",
+								"positions",
+								"history"
+							],
+							"query": [
+								{
+									"key": "units",
+									"value": "",
+									"description": "Список заведений (пиццерий) Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "staffMembers",
+									"value": "",
+									"description": "Список сотрудников Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "skip",
+									"value": "",
+									"description": "Количество записей, которые следует пропустить",
+									"disabled": true
+								},
+								{
+									"key": "take",
+									"value": "",
+									"description": "Количество записей, которые следует выбрать",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Команда → Количество открытых вакансий",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}/staff/vacancies/count",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}",
+								"staff",
+								"vacancies",
+								"count"
+							],
+							"query": [
+								{
+									"key": "units",
+									"value": "",
+									"description": "Список заведений (пиццерий) Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "localities",
+									"value": "",
+									"description": "Список населенных пунктов в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "skip",
+									"value": "",
+									"description": "Количество записей, которые следует пропустить",
+									"disabled": true
+								},
+								{
+									"key": "take",
+									"value": "",
+									"description": "Количество записей, которые следует выбрать",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Команда → Открытые вакансии",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}/staff/vacancies",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}",
+								"staff",
+								"vacancies"
+							],
+							"query": [
+								{
+									"key": "units",
+									"value": "",
+									"description": "Список заведений (пиццерий) Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "localities",
+									"value": "",
+									"description": "Список населенных пунктов в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "skip",
+									"value": "",
+									"description": "Количество записей, которые следует пропустить",
+									"disabled": true
+								},
+								{
+									"key": "take",
+									"value": "",
+									"description": "Количество записей, которые следует выбрать",
 									"disabled": true
 								}
 							]
