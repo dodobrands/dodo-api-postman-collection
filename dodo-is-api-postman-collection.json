@@ -2948,6 +2948,159 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Учёт → Складские остатки",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}/accounting/inventory-stocks",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}",
+								"accounting",
+								"inventory-stocks"
+							],
+							"query": [
+								{
+									"key": "units",
+									"value": "",
+									"description": "Required Список заведений (пиццерий) Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "stockItems",
+									"value": "",
+									"description": "Список сырья в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "skip",
+									"value": "",
+									"description": "Количество записей, которые следует пропустить",
+									"disabled": true
+								},
+								{
+									"key": "take",
+									"value": "",
+									"description": "Количество записей, которые следует выбрать",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
