@@ -890,6 +890,159 @@
 					"response": []
 				},
 				{
+					"name": "Учёт → Актуальное сырьё",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}/accounting/actual-stock-items",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}",
+								"accounting",
+								"actual-stock-items"
+							],
+							"query": [
+								{
+									"key": "modifiedAt",
+									"value": "",
+									"description": "Дата и время изменения в формате ISO 8601. Фильтр возвращает записи у которых дата изменения больше или равна переданной",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "",
+									"description": "Required Список заведений (пиццерий) Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "skip",
+									"value": "",
+									"description": "Количество записей, которые следует пропустить",
+									"disabled": true
+								},
+								{
+									"key": "take",
+									"value": "",
+									"description": "Количество записей, которые следует выбрать",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Учёт → Сопоставление идентификаторов продуктов",
 					"request": {
 						"auth": {
@@ -2602,6 +2755,165 @@
 					"response": []
 				},
 				{
+					"name": "Учет → Расход теста",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}/accounting/dough-consumption",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}",
+								"accounting",
+								"dough-consumption"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "",
+									"description": "Required Дата начала периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "toDate",
+									"value": "",
+									"description": "Required Дата конца периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "",
+									"description": "Required Список заведений (пиццерий) Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "skip",
+									"value": "",
+									"description": "Количество записей, которые следует пропустить",
+									"disabled": true
+								},
+								{
+									"key": "take",
+									"value": "",
+									"description": "Количество записей, которые следует выбрать",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Учёт → Перемещения сырья",
 					"request": {
 						"auth": {
@@ -2912,6 +3224,166 @@
 								"{{country}}",
 								"accounting",
 								"incoming-stock-items"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "",
+									"description": "Required Начало периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "to",
+									"value": "",
+									"description": "Required Конец периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "",
+									"description": "Required Список заведений (пиццерий) Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "skip",
+									"value": "",
+									"description": "Количество записей, которые следует пропустить",
+									"disabled": true
+								},
+								{
+									"key": "take",
+									"value": "",
+									"description": "Количество записей, которые следует выбрать",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Учёт → Приходы сырья по поставке",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}/accounting/incoming-stock-items/by-supply",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}",
+								"accounting",
+								"incoming-stock-items",
+								"by-supply"
 							],
 							"query": [
 								{
@@ -3465,6 +3937,177 @@
 									"key": "take",
 									"value": "",
 									"description": "Количество записей, которые следует выбрать",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Команда → Поиск дней рождения сотрудников",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}staff/members/birthdays",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}staff",
+								"members",
+								"birthdays"
+							],
+							"query": [
+								{
+									"key": "units",
+									"value": "",
+									"description": "Required Список отделов (пиццерий) Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "dayFrom",
+									"value": null,
+									"description": "Required День месяца, с которого начинается выбранный диапазон дат",
+									"disabled": true
+								},
+								{
+									"key": "dayTo",
+									"value": null,
+									"description": "Required День месяца, которым заканчивается выбранный диапазон дат",
+									"disabled": true
+								},
+								{
+									"key": "monthFrom",
+									"value": null,
+									"description": "Required Месяц, с которого начинается выбранный диапазон дат",
+									"disabled": true
+								},
+								{
+									"key": "monthTo",
+									"value": null,
+									"description": "Required Месяц, которым заканчивается выбранный диапазон дат",
+									"disabled": true
+								},
+								{
+									"key": "take",
+									"value": "",
+									"description": "Количество записей, которые следует выбрать",
+									"disabled": true
+								},
+								{
+									"key": "skip",
+									"value": "",
+									"description": "Количество записей, которые следует пропустить",
 									"disabled": true
 								}
 							]
@@ -6318,6 +6961,291 @@
 					"response": []
 				},
 				{
+					"name": "Заведения → Цели на месяц",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}/units/month-goals",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}",
+								"units",
+								"month-goals"
+							],
+							"query": [
+								{
+									"key": "unit",
+									"value": "",
+									"description": "Required Заведение (пиццерия) Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "month",
+									"value": "",
+									"description": "Required Месяц",
+									"disabled": true
+								},
+								{
+									"key": "year",
+									"value": "",
+									"description": "Required Год",
+									"disabled": true
+								}
+							]
+						},
+						"description": "auth"
+					},
+					"response": []
+				},
+				{
+					"name": "Заведения → Цели на месяц",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"unitId\": \"2a69836ab8f583ec11ed90098ae24dff\",\n  \"year\": 2000,\n  \"month\": 1,\n  \"salesPerPerson\": 1500.99,\n  \"productsPerPerson\": 0,\n  \"salesPerCourier\": 0,\n  \"ordersPerCourier\": 0,\n  \"certificates\": 0,\n  \"leakage\": 0,\n  \"writeOffsDueToDefectiveProduct\": 0,\n  \"defectiveProduct\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}/units/month-goals",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}",
+								"units",
+								"month-goals"
+							]
+						},
+						"description": "auth"
+					},
+					"response": []
+				},
+				{
 					"name": "Заведения → Производственные станции",
 					"request": {
 						"auth": {
@@ -7691,6 +8619,172 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Производство → Метрики с трекинга (Сводные)",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}/production/tracking-metrics/summary",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}",
+								"production",
+								"tracking-metrics",
+								"summary"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "",
+									"description": "Required Дата начала периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "toDate",
+									"value": "",
+									"description": "Required Дата конца периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "",
+									"description": "Required Список заведений (пиццерий) Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "skip",
+									"value": "",
+									"description": "Количество записей, которые следует пропустить",
+									"disabled": true
+								},
+								{
+									"key": "take",
+									"value": "",
+									"description": "Количество записей, которые следует выбрать",
+									"disabled": true
+								},
+								{
+									"key": "products",
+									"value": null,
+									"description": "Список продуктов в формате UUID",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -8192,33 +9286,47 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "?from&to&units",
+							"raw": "https://api.dodois.io/staff/recruitment/responses",
+							"protocol": "https",
+							"host": [
+								"api",
+								"dodois",
+								"io"
+							],
+							"path": [
+								"staff",
+								"recruitment",
+								"responses"
+							],
 							"query": [
 								{
-									"key": "from",
-									"value": null,
-									"description": "Стартовая дата (Utc) выборки по дате добавления отклика"
-								},
-								{
-									"key": "to",
-									"value": null,
-									"description": "Конечная дата (Utc) выборки по дате добавления отклика"
-								},
-								{
-									"key": "units",
-									"value": null,
-									"description": "Список отделов (пиццерий) Dodo IS в формате UUID"
-								},
-								{
 									"key": "take",
-									"value": null,
+									"value": "",
 									"description": "Количество записей, которые следует выбрать",
 									"disabled": true
 								},
 								{
 									"key": "skip",
-									"value": null,
+									"value": "",
 									"description": "Количество записей, которые следует пропустить",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": null,
+									"description": "Required Список отделов (пиццерий) Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "from",
+									"value": null,
+									"description": "Required Начало периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "to",
+									"value": null,
+									"description": "Required Конец периода в формате ISO 8601.",
 									"disabled": true
 								}
 							]
@@ -8381,6 +9489,1385 @@
 								{
 									"key": "skip",
 									"value": null,
+									"description": "Количество записей, которые следует выбрать",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Заказы",
+			"item": [
+				{
+					"name": "Заказы → Статистика по новым клиентам",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}/orders/clients-statistics",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}",
+								"orders",
+								"clients-statistics"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "",
+									"description": "Required Дата начала периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "toDate",
+									"value": "",
+									"description": "Required Дата конца периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "",
+									"description": "Required Список заведений (пиццерий) Dodo IS в формате UUID",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Рейтинги",
+			"item": [
+				{
+					"name": "Рейтинги → Рейтинг клиентского опыта",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/controlling/ratings/customer-experience",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"controlling",
+								"ratings",
+								"customer-experience"
+							],
+							"query": [
+								{
+									"key": "countryCode",
+									"value": "",
+									"description": "Код страны",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "",
+									"description": "Дата конца периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "skip",
+									"value": "",
+									"description": "Количество записей, которые следует пропустить",
+									"disabled": true
+								},
+								{
+									"key": "take",
+									"value": "",
+									"description": "Количество записей, которые следует выбрать",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Рейтинги → Рейтинг стандартов",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/controlling/ratings/standards",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"controlling",
+								"ratings",
+								"standards"
+							],
+							"query": [
+								{
+									"key": "countryCode",
+									"value": "",
+									"description": "Код страны",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "",
+									"description": "Дата конца периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "skip",
+									"value": "",
+									"description": "Количество записей, которые следует пропустить",
+									"disabled": true
+								},
+								{
+									"key": "take",
+									"value": "",
+									"description": "Количество записей, которые следует выбрать",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Рейтинги → Детальный рейтинг стандартов пиццерии",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/controlling/ratings/standards/detalization",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"controlling",
+								"ratings",
+								"standards",
+								"detalization"
+							],
+							"query": [
+								{
+									"key": "on",
+									"value": "",
+									"description": "Required Дата периода для отображения рейтинга в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "",
+									"description": "Required Дата конца периода в формате ISO 8601",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Рейтинги → Детальный рейтинг клиентского опыта пиццерии",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/controlling/ratings/customer-experience/detalization",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"controlling",
+								"ratings",
+								"customer-experience",
+								"detalization"
+							],
+							"query": [
+								{
+									"key": "on",
+									"value": "",
+									"description": "Required Дата периода для отображения рейтинга в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "",
+									"description": "Required Дата конца периода в формате ISO 8601",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Рейтинги → История рейтинга клиентского опыта",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/controlling/ratings/customer-experience/history",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"controlling",
+								"ratings",
+								"customer-experience",
+								"history"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "",
+									"description": "Required Дата начала периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "toDate",
+									"value": "",
+									"description": "Required Дата конца периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "",
+									"description": "Required Список заведений (пиццерий) Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "skip",
+									"value": "",
+									"description": "Количество записей, которые следует пропустить",
+									"disabled": true
+								},
+								{
+									"key": "take",
+									"value": "",
+									"description": "Количество записей, которые следует выбрать",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Рейтинги → История рейтинга стандартов",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/controlling/ratings/standards/history",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"controlling",
+								"ratings",
+								"standards",
+								"history"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "",
+									"description": "Required Дата начала периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "toDate",
+									"value": "",
+									"description": "Required Дата конца периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "",
+									"description": "Required Список заведений (пиццерий) Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "skip",
+									"value": "",
+									"description": "Количество записей, которые следует пропустить",
+									"disabled": true
+								},
+								{
+									"key": "take",
+									"value": "",
+									"description": "Количество записей, которые следует выбрать",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Рейтинги → Апелляции рейтинга стандартов пиццерии",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/controlling/ratings/standards/appeals",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"controlling",
+								"ratings",
+								"standards",
+								"appeals"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "",
+									"description": "Required Дата начала периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "toDate",
+									"value": "",
+									"description": "Required Дата конца периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "",
+									"description": "Required Список заведений (пиццерий) Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "skip",
+									"value": "",
+									"description": "Количество записей, которые следует пропустить",
+									"disabled": true
+								},
+								{
+									"key": "take",
+									"value": "",
+									"description": "Количество записей, которые следует выбрать",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Рейтинги → Апелляции рейтинга клиентского опыта пиццерии",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/controlling/ratings/customer-experience/appeals",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"controlling",
+								"ratings",
+								"customer-experience",
+								"appeals"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "",
+									"description": "Required Дата начала периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "toDate",
+									"value": "",
+									"description": "Required Дата конца периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "",
+									"description": "Required Список заведений (пиццерий) Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "skip",
+									"value": "",
+									"description": "Количество записей, которые следует пропустить",
+									"disabled": true
+								},
+								{
+									"key": "take",
+									"value": "",
 									"description": "Количество записей, которые следует выбрать",
 									"disabled": true
 								}
