@@ -4858,6 +4858,592 @@
 					"response": []
 				},
 				{
+					"name": "Команда → Премии",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}/staff/incentives/premium",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}",
+								"staff",
+								"incentives",
+								"premium"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "",
+									"description": "required Начало периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "to",
+									"value": "",
+									"description": "required Конец периода в формате ISO 8601",
+									"disabled": true
+								},
+								{
+									"key": "units",
+									"value": "",
+									"description": "required Список заведений (пиццерий) Dodo IS в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "skip",
+									"value": "",
+									"description": "Количество записей, которые следует пропустить",
+									"disabled": true
+								},
+								{
+									"key": "take",
+									"value": "",
+									"description": "Количество записей, которые следует выбрать",
+									"disabled": true
+								},
+								{
+									"key": "staffMembers",
+									"value": "",
+									"description": "Список сотрудников в формате UUID",
+									"disabled": true
+								},
+								{
+									"key": "staffPositions",
+									"value": null,
+									"description": "Список должностей в формате UUID",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Команда → Премия единоразовая",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"staffId\": \"000d3a240c719a8711e68aba13f7fe13\",\n  \"onLocal\": \"2023-11-15T09:00:00\",\n  \"amount\": 1000.5,\n  \"comment\": \"Премия за отличную работу\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}/staff/incentives/premium/one-time",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}",
+								"staff",
+								"incentives",
+								"premium",
+								"one-time"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Команда → Премия к вознаграждению в час",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"staffId\": \"000d3a240c719a8711e68aba13f7fe13\",\n  \"fromLocal\": \"2023-11-01T09:00:00\",\n  \"toLocal\": \"2023-11-30T18:00:00\",\n  \"amount\": 50,\n  \"comment\": \"Премия за дополнительную нагрузку\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}/staff/incentives/premium/hourly",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}",
+								"staff",
+								"incentives",
+								"premium",
+								"hourly"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Команда → Премия по должности к вознаграждению в час",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"unitId\": \"000d3a240c719a8711e68aba13f7fe13\",\n  \"staffPosition\": \"000d3a240c719a8711e68aba13f7fe13\",\n  \"fromLocal\": \"2023-11-01T09:00:00\",\n  \"toLocal\": \"2023-11-30T18:00:00\",\n  \"amount\": 50,\n  \"comment\": \"Премия за работу в праздничные дни\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}/staff/incentives/premium/position",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}",
+								"staff",
+								"incentives",
+								"premium",
+								"position"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Команда → Расписания (создание)",
 					"request": {
 						"auth": {
