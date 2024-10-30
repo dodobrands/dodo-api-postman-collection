@@ -2596,6 +2596,142 @@
 					"response": []
 				},
 				{
+					"name": "Учёт → Списание",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "{{auth_scope}}",
+									"type": "string"
+								},
+								{
+									"key": "refreshRequestParams",
+									"value": [],
+									"type": "any"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "code_verifier",
+											"value": "c775e7b757ede630cd0aa1113bd102661ab38829ca52a6422ab782862f268646",
+											"enabled": true,
+											"send_as": "request_body"
+										},
+										{
+											"key": "grant_type",
+											"value": "authorization_code",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "authRequestParams",
+									"value": [
+										{
+											"key": "code_challenge",
+											"value": "51FaJvQFsiNdiFWIq2EMWUKeAqD47dqU_cHzJpfHl-Q",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "code_challenge_method",
+											"value": "S256",
+											"enabled": true,
+											"send_as": "request_url"
+										},
+										{
+											"key": "response_type",
+											"value": "code",
+											"enabled": true,
+											"send_as": "request_url"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "access_token",
+									"type": "string"
+								},
+								{
+									"key": "challengeAlgorithm",
+									"value": "S256",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret}}",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "{{auth_url}}/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "{{auth_url}}/connect/token",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"writeOffs\": [\n    {\n      \"unitId\": \"2a69836ab8f583ec11ed90098ae24dff\",\n      \"stockItemId\": \"000d3a240c719a8711e68aba13f7f862\",\n      \"productId\": \"000d3a240c719a8711e68aba13f7f862\",\n      \"reason\": \"Marketing\",\n      \"quantity\": 2.345,\n      \"measurementUnit\": \"Quantity\",\n      \"comment\": \"Дегустация\"\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/dodopizza/{{country}}/accounting/write-offs",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"dodopizza",
+								"{{country}}",
+								"accounting",
+								"write-offs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Учёт → Расход сырья за период",
 					"request": {
 						"auth": {
