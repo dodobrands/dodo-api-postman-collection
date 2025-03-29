@@ -4193,7 +4193,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{api_url}}/dodopizza/{{country}}staff/members/birthdays",
+							"raw": "{{api_url}}/dodopizza/{{country}}/staff/members/birthdays",
 							"host": [
 								"{{api_url}}"
 							],
